@@ -1,0 +1,358 @@
+$violet: #990066
+$pink: #e90049
+$white: #fff
+$black: #000
+
+// reset
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+
+// common styles
+
+img
+  max-width: 100%
+  height: auto
+a
+  display: block
+  text-decoration: none
+.nob-container ::-moz-selection
+  background: $violet
+  color: $white
+.nob-container ::selection
+  background: $violet
+  color: $white
+.nob-white
+  display:block
+  background-color: $white
+  position: absolute
+  width: 380px
+  height: 90px
+  top: 123px
+
+.nob-title-pink
+  background: $pink
+  color: $white
+  font-size: 92px
+  font-family: 'rob-light'
+  text-transform: uppercase
+  white-space: nowrap
+
+.nob-title-violet
+  font-size: 89px
+  font-family: "rob-light"
+  color: $violet
+  text-transform: uppercase
+  white-space: nowrap
+  line-height: 90px
+
+.nob-block-violet
+  background: $violet
+  padding: 30px 40px 80px
+  &__content
+    color: $white
+    font-family: 'rob-bold'
+    text-transform: uppercase
+    text-align: center
+  .nob-title:first-child
+    font-size: 57px
+    position: relative
+    span
+      background: $violet
+      padding: 0 10px
+      position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 89%
+      border-top: 1px solid $white
+      top: 35px
+      left: 5%
+  .nob-title:nth-child(2)
+    font-family: 'rob-light'
+    font-size: 92px
+    line-height: 90px
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 135px
+      border-top: 1px solid $white
+      bottom: -13px
+      left: 40%
+  .nob-text
+    padding: 35px 0
+    font-size: 21px
+  .nob-img
+    width: 605px
+    margin: 0 auto
+
+.nob-block-game
+  &__content
+    display: flex
+    height: 400px
+    box-sizing: border-box
+  .nob-text
+    width: 50%
+    position: relative
+    > div
+      position: absolute
+  .nob-title
+    font-size: 57px
+    font-family: 'rob-bold'
+    color: $black
+    text-transform: uppercase
+  .nob-sub-title
+    font-size: 21px
+    font-family: 'rob-bold'
+    color: $black
+    text-transform: uppercase
+  .nob-title-pink
+    font-size: 63px
+  .nob-img
+    width: 324px
+    height: 393px
+
+
+
+.nob-container
+  width: 754px
+  height: 100%
+  background-color: $white
+  .nob-intro
+    background: url(../img/img1.png)
+    width: 100%
+    height: 600px
+    position: relative
+    .nob-title-pink
+      padding: 10px 20px
+    &__content > div
+      position: absolute
+    &-item:first-child
+      transform: rotate(-90deg)
+      color: $white
+      font-size: 64px
+      font-family: 'rob-reg'
+      text-transform: uppercase
+      bottom: 126px
+      left: 80px
+    &-item:nth-child(2)
+      bottom: 100px
+      right: 0
+    &-item:last-child
+      bottom: 0
+      right: -195px
+      line-height: 90px
+      padding: 10px 30px
+
+
+.nob-block
+  overflow: hidden
+  &-one
+    height: 460px
+    box-sizing: border-box
+    padding: 30px
+    padding-right: 0px
+    padding-bottom: 55px
+    &__content
+      display: flex
+    .nob-text
+      width: 190px
+      min-height: 100%
+      position: relative
+      .nob-sub-title
+        position: absolute
+        color: $black
+        font-size: 21px
+      .nob-sub-title:nth-child(3)
+        font-family: 'rob-bold'
+        text-transform: uppercase
+        bottom: 75px
+      .nob-sub-title:last-child
+        font-family: 'rob-light'
+        bottom: -2px
+        right: 10px
+        text-align: right
+    .nob-title
+      font-size: 57px
+      font-family: 'rob-bold'
+      color: $black
+      text-transform: uppercase
+      width: 190px
+      position: relative
+      top: 55px
+      z-index: 999
+      &::before,
+      &::after
+        content: ''
+        position: absolute
+        border-bottom: 1px solid $black
+        width: 100%
+        right: 0
+      &::before
+        top: -10px
+      &::after
+        bottom: -102px
+    .nob-title-violet
+      background-color: $white
+      padding-right: 190px
+      width: 100%
+      position: relative
+      top: 55px
+      z-index: 999
+
+  &-three
+    height: 520px
+    padding: 80px 0
+    .nob-text
+      position: relative
+      &::before,
+      &::after
+        content: ''
+        position: absolute
+      &::before
+        border-left: 1px solid $black
+        height: 290px
+        right: 185px
+        bottom: 85px
+      &::after
+        border-top: 1px solid $white
+        width: 210px
+        right: 0px
+        top: 50px
+
+    .nob-title
+      font-size: 57px
+      font-family: 'rob-bold'
+      color: $black
+      text-transform: uppercase
+      position: absolute
+      top: -60px
+      right: 115px
+      z-index: 999
+    .nob-title-pink
+      position: absolute
+      top: -6px
+      right: 7px
+      padding-right: 214px
+      padding-left: 37px
+    .nob-sub-title
+      font-size: 21px
+      font-family: 'rob-bold'
+      color: $black
+      text-transform: uppercase
+      position: absolute
+      bottom: -140px
+      right: 25px
+
+  &-four
+    padding: 25px 40px
+    &__content
+      border: gray 1px solid
+      text-align: center
+      // position: relative
+    .nob-title
+      font-size: 57px
+      font-family: 'rob-bold'
+      color: $black
+      text-transform: uppercase
+      position: relative
+      top: -35px
+      background-color: $white
+      width: 440px
+      margin: 0 auto
+      padding: 0px 10px
+    .nob-title-violet
+      margin-top: -35px
+      font-size: 95px
+      padding-bottom: 10px
+    .nob-img
+      width: 630px
+      margin: 0 auto
+      height: 440px
+      position: relative
+      z-index: 999
+      overflow: hidden
+    .nob-sub-title
+      font-size: 21px
+      font-family: 'rob-bold'
+      color: $black
+      text-transform: uppercase
+      padding: 30px
+
+  &-five
+    &__content
+      display: flex
+      height: 630px
+      padding: 60px 0
+      box-sizing: border-box
+    .nob-text
+      width: 50%
+      position: relative
+      > div
+        position: absolute
+    .nob-title
+      font-size: 57px
+      font-family: 'rob-bold'
+      color: $black
+      text-transform: uppercase
+      top: 150px
+      left: 50px
+    .nob-sub-title
+      font-size: 21px
+      font-family: 'rob-bold'
+      color: $black
+      text-transform: uppercase
+      bottom: 0
+      left: 35px
+    .nob-title-pink:nth-child(2)
+      bottom: 165px
+      left: 45px
+      padding: 5px 35px
+    .nob-title-pink:nth-child(3)
+      bottom: 50px
+      padding: 5px 40px
+    .nob-img
+      img
+        height: 100%
+
+  &-six
+    .nob-title:first-child span
+      padding: 0 50px
+
+  &-seven
+    padding-top: 55px
+    .nob-title
+      top: 25px
+      left: 193px
+    .nob-title-pink
+      padding: 5px 25px
+    .nob-title-pink:nth-child(2)
+      top: 93px
+      left: 35px
+    .nob-title-pink:nth-child(3)
+      bottom: 138px
+      left: 85px
+
+  &-eight
+    padding-top: 15px
+    padding-left: 40px
+    .nob-title
+      top: 15px
+      left: 0px
+    .nob-title-pink
+      padding: 5px 25px
+    .nob-title-pink:nth-child(2)
+      top: 85px
+      left: 0px
+    .nob-title-pink:nth-child(3)
+      bottom: 145px
+      left: -85px
+    .nob-title-pink:nth-child(4)
+      bottom: 60px
+      left: -55px
